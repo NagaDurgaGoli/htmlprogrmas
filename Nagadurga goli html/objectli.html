@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let firstname="naga";
+            let lastname="durga";
+            let person={
+                firstname,
+                lastname
+
+            };
+            function createPerson(firstname,lastname){
+                let fullnmae = firstname +" "+ lastname;
+                return{firstname,lastname,fullnmae}
+            }
+            let p=createPerson("naga","durga");
+
+            document.writeln(p.firstname);
+            document.writeln(p.lastname);
+            document.writeln(p.fullnmae);
+
+            //document.write(person.firstname);
+            //document.write(person.lasttname);
+        </script>
+    </head>
+</html>

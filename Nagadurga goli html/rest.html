@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function xyz(x, y, ...z) {
+             document.write(x, ' ', y); // hey hello
+
+             document.write(z); // ["wassup", "goodmorning", "hi", "howdy"]
+             document.write(z[0]); // wassup
+             document.write(z.length); // 4
+             }
+
+          xyz("hey", "hello", "wassup", "goodmorning", "hi", "howdy")
+        </script>
+    </body>
+</html>

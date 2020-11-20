@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table
+            {
+                background-color: aqua;
+            }
+.google {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+            table
+            {
+                background-color: aqua;
+            }
+        </style>
+        <br>
+        <br><br>
+ </head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>  
+        <body>
+<script>  
+function validateform(){  
+var name=document.f1.name.value;  
+var password=document.f1.password.value;  
+var phone=document.f1.number.value;
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  } 
+else if(phone.length<10){
+  alert("Enter a valid phone number") ;
+  return false;
+} } </script>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-9 col-md-7" style="background-color:red;">
+            <h2 >List of my accounts</h2>
+            <ul>
+            <li>Gmail</li>
+            <li>yahoo</li>
+             <li>Microsoft</li>
+            </ul>
+</div>
+<div class="col-xs-3 col-md-5" style="background-color:lavender;">
+            <h2>List of my accounts in ordered list</h2>
+            <ol>
+            <li>Gmail</li>
+            <li>yahoo</li>
+             <li>Microsoft</li>
+            </ol></div></div>
+<!-- HTML have comment lines -->
+<div class="google">
+<p>Google, LLC is an American multinational technology company that specializes in Internet-related services and products,
+ <br>which include online advertising technologies, a search engine, cloud computing, software, and hardware. <br>
+It is considered one of the Big Five technology companies in the U.S. information technology industry, alongside Amazon, Facebook, Apple, and Microsoft.[9][10][11]<br>
+Google was founded in September 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University in California. 
+<br>Together they own about 14 percent of its shares and control 56 percent of the stockholder voting power through supervoting stock. 
+They incorporated Google as a California privately held company on September 4, 1998, in California. Google was then reincorporated in Delaware on October 22, 2002.[12] 
+An initial public offering (IPO) took place on August 19, 2004, and Google moved to its headquarters in Mountain View, California, nicknamed the Googleplex. 
+In August 2015, Google announced plans to reorganize its various interests as a conglomerate called Alphabet Inc. 
+Google is Alphabet's leading subsidiary and will continue to be the umbrella company for Alphabet's Internet interests.
+ Sundar Pichai was appointed CEO of Google, replacing Larry Page, who became the CEO of Alphabet.
+
+</p></div>
+           <p>this is about hyperlinks
+          <a href="https://www.w3schools.com/html/default.asp">HTML</a></p>
+         <p>this is used to link the page using the same system<a href="file:///C:/Users/Naga%20Durga/Documents/structure.html"> structure</a></p>
+         <a href="#top">Go to table</a>
+<div class="row">
+<div class="col-xs-9 col-md-7" style="background-color:red;">
+         <img src="C:\Users\Naga Durga\Pictures\pptexample.png"  alt="sample picture"/></div>
+<div class="col-xs-3 col-md-5" style="background-color:lavender;">
+         <img src="https://i.pinimg.com/originals/52/c6/65/52c665df0515dd447eb92544374cf543.jpg" width="300" height="500"/> </div></div>
+<!<fieldset>
+<legend> Basic form</legend>
+        <form action="" method="GET">
+          <label for="username">Username:</label><input type="text" name="username" placeholder="Enter your name"><br>
+          <label for="password">Password:</label><input type="password" name="password" placeholder="Enter your password"><br>
+          <label for="organization">Username:</label><input type="text" name="organization" value="organization"><br>
+         <input type="submit" value="submit this form">
+         <input type="reset" value="clear this form">
+</form>
+</fieldset>>
+<hr>
+<hr>
+       <h1 id="top">This is table</h1>
+<div class="row">
+<div class="col-xs-12 col-md-12" style="background-color:pink;" >
+           <form name="f1" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()">
+                <table border="!" align="center" style="background-color:aqua;">
+                    <tr>
+                        <td>Name:<span style="color:blue">*</span></td>
+                        <td><input type="text" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password:<span style="color:red">*</span></td>
+                        <td><input type="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone number:<span style="color:red">*</span></td>
+                        <td><input type="number" name="number" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:<span style="color:red">*</span></td>
+                        <td><input type="radio" name="gender">Male
+                         <input type="radio" name="gender">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Phone number:<span style="color:red">*</span></td>
+                        <td><input type="date" name="date" required></td>
+                    </tr>
+                    <tr> <td>Highest Qualification:<span style="color:blue">*</span></td>
+                        <td><select>
+                            <option>Select Highest Qualification
+                            </option></select></td>
+                    </tr>
+                    <tr>
+                        <td><span style="color:red">Courses Interested in:*</span></td>
+                        <td>
+                            <input type="radio" type="square">Java
+                            <input type="radio" type="square">HTML5
+                            <input type="radio" type="square">CSS3
+                            <input type="radio" type="square">Angular JS
+                            <input type="radio" type="square">JQuery
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Comments:(Mention External Certification if any)
+                        </td>
+                        <td>  <textarea cols="30" rows="10"></textarea></td>td>
+                    </tr>
+                    <tr>
+                        <td>Upload Degree / External Certificates:
+                        <span style="color:red">*</span></td>
+                        <td><input type="file" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="submit information" value="submit"><input type="reset" name="clear" value="reset"></td>
+                    </tr>
+                </table>
+            </form></div></div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>     
+ 
+ </body>
+   
+</html>
